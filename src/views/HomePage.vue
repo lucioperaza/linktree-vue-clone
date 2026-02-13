@@ -14,7 +14,7 @@ const profile = ref({
     <!-- Profile Header-->
     <div class="mb-8 flex flex-col items-center text-center">
       <div
-        class="mb-4 h-24 w-24 overflow-hidden rounded-full border-4 border-green-400 shadow-lg shadow-green-500/20 sm:h-32 sm:w-32"
+        class="mb-4 h-24 w-24 overflow-hidden rounded-full border-4 border-yellow-600 shadow-lg shadow-green-500/20 sm:h-32 sm:w-32"
       >
         <img
           :src="profile.avatar"
@@ -22,10 +22,10 @@ const profile = ref({
           class="h-full w-full object-cover"
         />
       </div>
-      <h1 class="mb-2 font-display text-2xl font-bold text-white sm:text-3xl">
+      <h1 class="mb-2 font-display text-2xl font-bold text-black sm:text-3xl">
         {{ profile.name }}
       </h1>
-      <p class="max-w-xs text-gray-300 sm:text-lg">{{ profile.slogan }}</p>
+      <p class="max-w-xs text-gray-800 sm:text-lg">{{ profile.slogan }}</p>
     </div>
 
     <!--Link Card-->
@@ -39,7 +39,7 @@ const profile = ref({
     <!--Navigate to Info-->
     <RouterLink
       to="/info"
-      class="mt-8 text-sm text-gray-400 underline-offset-4 transition-colors duration-200 hover:text-green-400 hover:underline"
+      class="mt-8 text-sm text-black underline-offset-4 transition-colors duration-200 hover:text-yellow-600 hover:underline"
       >About Me →</RouterLink
     >
   </main>

@@ -3,11 +3,11 @@
     href="#"
     target="_blank"
     rel="noopener noreferrer"
-    class="group relative flex w-full items-center gap-4 rounded-xl border border-gray-700 bg-gray-800 p-4 shadow-md shadow-gray-900/50 transition-all duration-300 hover:scale-[1.02] hover:border-green-600 hover:shadow-xl hover:shadow-green-500/20"
+    class="group relative flex w-full items-center gap-4 rounded-xl border border-orange-900 bg-linear-to-br from-yellow-600 via-yellow-300 to-yellow-600 p-4 shadow-md shadow-gray-900/50 transition-all duration-300 hover:scale-[1.02] hover:border-orange-500 hover:shadow-xl hover:shadow-orange-950/20"
   >
     <!-- Icon Container -->
     <div
-      class="rounden-lg flex h-12 w-12 shrink-0 items-center justify-center bg-gray-700 text-green-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-green-500 group-hover:text-white group-hover:shadow-xl group-hover:shadow-green-500/20"
+      class="rounden-lg flex h-12 w-12 shrink-0 items-center justify-center bg-yellow-600 text-yellow-900 transition-all duration-300 group-hover:scale-110 group-hover:bg-yellow-700 group-hover:text-white group-hover:shadow-xl group-hover:shadow-red-950/20"
     >
       <svg
         viewBox="0 0 24 24"
@@ -26,15 +26,15 @@
 
     <!-- Text Content -->
     <div class="min-w-0 flex-1">
-      <h3 class="truncate font-display text-white font-stretch-semi-condensed">Link Title</h3>
-      <p class="truncate text-sm text-gray-400">
+      <h3 class="truncate font-display text-black font-stretch-semi-condensed">Link Title</h3>
+      <p class="truncate text-sm text-gray-700">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
       </p>
     </div>
 
     <!-- Hover Glow Effect-->
     <div
-      class="absolute inset-0 rounded-xl bg-linear-to-r from-green-500/0 via-green-500/10 to-green-500/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+      class="absolute inset-0 rounded-xl bg-linear-to-r from-orange-500/5 via-orange-500/36 to-orange-500/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
     />
   </a>
 </template>

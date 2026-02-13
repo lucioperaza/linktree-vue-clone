@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 font-sans">
+  <div class="min-h-screen bg-linear-to-br from-orange-200 via-orange-300 to-orange-200 font-sans">
     <RouterView />
   </div>
 </template>
