@@ -6,6 +6,29 @@ const profile = ref({
   name: 'Lucio Peraza',
   slogan: 'Full Stack Developer and Student',
   avatar: 'https://api.dicebear.com/9.x/big-ears-neutral/svg?seed=Lucio',
+  links: [
+    {
+      id: 1,
+      title: 'Github',
+      url: 'https://github.com/lucioperaza',
+      icon: 'code',
+      description: 'Check out my projects',
+    },
+    {
+      id: 2,
+      title: 'Linkedin',
+      url: 'https://www.linkedin.com/in/lucio-peraza-168b9587',
+      icon: 'briefcase',
+      description: 'Connect with me professionally',
+    },
+    {
+      id: 3,
+      title: 'Expense Splitter',
+      url: 'https://expense-splitter-vue.lucio-peraza54.workers.dev/',
+      icon: 'money',
+      description: 'Check out my expense splitter project',
+    },
+  ],
 })
 </script>
 
@@ -14,7 +37,7 @@ const profile = ref({
     <!-- Profile Header-->
     <div class="mb-8 flex flex-col items-center text-center">
       <div
-        class="mb-4 h-24 w-24 overflow-hidden rounded-full border-4 border-yellow-600 shadow-lg shadow-green-500/20 sm:h-32 sm:w-32"
+        class="mb-4 h-24 w-24 overflow-hidden rounded-full border-4 border-yellow-600 shadow-lg shadow-orange-500/20 sm:h-32 sm:w-32"
       >
         <img
           :src="profile.avatar"
@@ -31,8 +54,12 @@ const profile = ref({
     <!--Link Card-->
     <div class="flex w-full max-w-md flex-col gap-4">
       <LinkCard
-        v-for="x of [1, 2, 3]"
-        :key="x"
+        v-for="link in profile.links"
+        :key="link.id"
+        :title="link.title"
+        :url="link.url"
+        :description="link.description"
+        :icon="link.icon"
       />
     </div>
 
