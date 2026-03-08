@@ -28,6 +28,13 @@ const profile = ref({
       icon: 'money',
       description: 'Check out my expense splitter project',
     },
+    {
+      id: 4,
+      title: 'Anime Roulette Machine',
+      url: 'https://anime-roulette-machine.lucio-peraza54.workers.dev/',
+      icon: 'roll',
+      description: 'Check out my anime random picker project',
+    },
   ],
 })
 </script>
